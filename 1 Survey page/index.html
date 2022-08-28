@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey information</p> 
+    <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label">Enter Your Name: <input id="name" type="text" name="name-label" required placeholder="NAME" /></label>
+        <label id="email-label">Enter Your Email: <input id="email" type="email" name="email" required placeholder="EMAIL"/></label>
+        <label id="number-label">Survey Number: <input id="number" type="number" name="number" min="5" max="10" required placeholder="NUMBER" /></label>
+      </fieldset>
+      <fieldset>
+        <label><input type="radio" name="terms" class="inline" value="accept-terms"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+        <label><input type="radio" name="terms" class="inline" value="decline-terms"/> I <strong>DO NOT</strong> accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+        <hr>
+        <p>Please choose from folowing that apply: </p>
+        <label>
+          <input type="checkbox" name="survey1" class="inline" required value="survey1"/> "survey question 1"
+        </label>
+        <label>
+          <input type="checkbox" name="survey2" class="inline" required value="survey2" />"survey question 2"
+        </label>
+        <label>
+          <input type="checkbox" name="survey2" class="inline" required value="survey3" />"survey question 3"
+        </label>
+        <label>
+          <input type="checkbox" name="survey4" class="inline" required value="survey4" />"survey question 4"
+        </label>
+        <label>
+          <input type="checkbox" name="survey5" class="inline" required value="survey5" />"survey question 5"
+        </label>
+        <hr>
+      </fieldset>
+      <fieldset>
+        <label>Upload a profile picture: <input type="file" name="file" /></label>
+        <label>Input your age (years): <input type="number" name="age" min="13" max="120" />
+        </label>
+        <label>How did you hear about us?
+          <select name="referrer" id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label>Provide a bio:
+          <textarea name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
