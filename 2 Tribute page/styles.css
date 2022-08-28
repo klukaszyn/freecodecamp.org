@@ -1,0 +1,44 @@
+body {
+  background-color: #e0e0e0;
+  margin: 5% 10%
+}
+#title {
+    font-size: 35px;
+    width: 60vmax;
+  }
+  ul > li {
+    padding: 5px;
+  }
+
+.center {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+  }
+  
+
+#image {
+  max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+
+  }
+
+  @media only screen and (min-width:480px)
+  {
+
+  }
+
+
+  @media only screen and (min-width:1200px)
+  {
+
+  a {
+    color: black;
+  }
